@@ -7,7 +7,12 @@
   - Forum(Name, tags, id)
   - post(Title, Message, anexos, id, id_forum, id_user)
   - Chat(name, description, id)
-  - message(ou comment)(user, id, date, content)
+  - message(ou comment)(user, id, content)
+ 
+  - Follow(id_followed, id_follow)
+  - like/dislike(Like(boolean or null), id_message, id_user)
+ 
+  Alguns atributos podem ser adicionados conforme o projeto vai ficando mais complexo.
 - ## Coisas que talvez sejam adicionadas
   - like e dislike
   - capacidade de seguir um fórum
@@ -16,3 +21,13 @@
   - capacidade de adicionar links
   - personalização de forum (temas, imagens, etc)
   - anexos (imagens, arquivos, vídeos)
+
+ - ## Aplicativos/linguagens usados
+   - ### Aplicativos:
+     - Pgadmin
+     - VsCode
+     - Node.JS
+   - ### Linguagens
+     - HTML/CSS
+     - Javascript
+     - Sql (postgrees)
