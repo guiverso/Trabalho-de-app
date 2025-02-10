@@ -1,0 +1,30 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "projeto idiota",
+  "main": "src/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "dbtest": "nodemon src/models/db.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guiverso/Trabalho-de-app.git"
+  },
+  "author": "guilherme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guiverso/Trabalho-de-app/issues"
+  },
+  "homepage": "https://github.com/guiverso/Trabalho-de-app#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
+  }
+}
