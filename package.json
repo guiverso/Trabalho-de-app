@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "nodemon src/server.js",
-    "dbtest": "nodemon src/models/db.js"
+    "dbtest": "nodemon src/services/db.js",
+    "servertest" : "nodemon tests/server.js"
   },
   "repository": {
     "type": "git",
