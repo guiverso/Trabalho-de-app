@@ -30,6 +30,7 @@ header{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    height: 3vw;
 }
 
 header > h1{
@@ -38,9 +39,8 @@ header > h1{
 }
 
 nav{
-    position: fixed;
-    top: 5vw;
-    left: 0;
+    margin-top: 3vw;
+    padding: 0.5vw;
 }
 
 main{
@@ -48,9 +48,31 @@ main{
     float: left;
 }
 
-.post{
+input{
+    width: 250px;
+    height: 20px;
+    margin: 5px;
+    display: flex;
+    color: aliceblue;
+    border-radius: 10px;
     background-color: var(--containers-color);
-    padding: 20px;
+    text-align: center;
+    outline: none;
+}
+
+input:focus{
+    border: aliceblue 4px solid;
+}
+
+button{
+    color: aliceblue;
+    background-color: var(--buttons-color-1);
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    background-color: var(--buttons-color-selected-1);
 }
 
 .container{
@@ -82,15 +104,12 @@ main{
     font-size: 11px;
 }
 
-button{
-    color: aliceblue;
-    background-color: var(--buttons-color-1);
-    border-radius: 5px;
-    border: none;
-}
-
-button:hover{
-    background-color: var(--buttons-color-selected-1);
+.post{
+    background-color: var(--containers-color);
+    border: var(--containers-border) solid 2px;
+    border-radius: 30px;
+    padding: 1vw;
+    margin: 5px;
 }
 
 #login{
@@ -105,27 +124,33 @@ button:hover{
     height: 30px;
 }
 
-input{
-    width: 250px;
-    height: 20px;
-    margin: 5px;
-    display: flex;
-    color: aliceblue;
-    border-radius: 10px;
-    background-color: var(--containers-color);
-    text-align: center;
-    outline: none;
-}
-
-input:focus{
-    border: aliceblue 4px solid;
-}
-
 #search{
+    display:flex;
+    align-items: center;
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#searchinput{
     width: 40vw;
     height: 40px;
     border: none;
     border-radius: 30px;
     text-align: left;
     text-indent: 20px;
+}
+
+#searchinput:focus{
+    border: aliceblue 4px solid;
+}
+
+#searchbutton{
+    background-color: purple;
+    width: 10vw;
+    height: 2vw;
+}
+
+#searchbutton:hover{
+    background-color: rgb(236, 164, 236);
 }
