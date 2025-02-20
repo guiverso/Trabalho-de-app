@@ -4,31 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platinum - profile</title>
-    <link rel="stylesheet" href="../create_profile/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <script src="../create_profile/script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Platinum</h1>
-        <a href="/">login</a>
     </header>
 
-    <main>
+    <div class="container">
         <h2>Criar Perfil</h2>
-        <div class="input">
-            <label for="">nickname:</label><input type="text" id="nickname" maxlength="40">
-        </div>
-        <div class="input">
-            <label for="">email:</label><input type="text" id="email" maxlength="40">
-        </div>
-        <div class="input">
-            <label for="">Senha:</label><input type="text" id="password" maxlength="20">
-        </div>
-        <div class="input">
-            <label for="">Confirmar:</label><input type="text" id="confirm" maxlength="20">
-        </div>
+        <input type="text" id="nickname" maxlength="40" placeholder="apelido">
+        <input type="email" id="email" maxlength="40" placeholder="e-mail">
+        <input type="password" id="password" maxlength="20" placeholder="senha">
+        <input type="password" id="confirm" maxlength="20" placeholder="confirmar senha">
 
-        <button onclick="send_informations()">Criar</button>
-    </main>
+        <button onclick="send_informations()" id="create-profile">Criar</button>
+        <p><a href="/">Já tenho conta</a></p>
+    </div>
 </body>
 </html>

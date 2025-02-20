@@ -1,7 +1,6 @@
 function test_event(){
-    var valor = document.querySelector("#input").value;
-    fetch('/', { method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ valor })
-    });
+    const body = document.querySelector("body");
+    const p = document.createElement('p');
+    p.textContent = "olá mundo funcionou caraiooooo";
+    body.appendChild(p);
 }
