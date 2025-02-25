@@ -4,6 +4,7 @@ const database = require('./services/db');
 const { login, create } = require('./controllers/auth');
 const {feed,create_post,forum_feed} = require('./controllers/posts')
 const { get_created_foruns, create_forum, get_forum_by_id, get_all_foruns} = require('./controllers/foruns')
+const {get_all_profiles,delete_user,edit_user} = require('./controllers/users')
 const app = express();//faz um server
 const port = 80;//numero da porta
 
@@ -67,6 +68,19 @@ app.post('/created_foruns',get_created_foruns);
 app.post('/create_forum_post', create_forum);
 
 app.post('/public_post',create_post);
+
+//admin
+
+app.get('/admin',(req,res)=>{
+  const adminpage = path.join(__dirname,'../public/admin/index.html');
+  res.sendFile(adminpage)
+})
+
+app.get('/adm_users',get_all_profiles);
+
+app.post('/adm_delete_user',delete_user);
+
+app.post('/adm_edit_user',edit_user)
 
 app.listen(port, () => {//ouve o que tá na porta
   console.log(`servidor rodando na porta ${port}`);//indica a porta

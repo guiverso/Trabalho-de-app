@@ -14,10 +14,12 @@ async function get_login(){
 
     console.log(data)
     console.log(response.ok)
-    if(response.ok){
+    if(response.ok && data.username != 'admin'){
         sessionStorage.setItem('username',username);
         window.location.href = '/home';
-    }else{
+    }else if (!response.ok){
         alert(data.message)
+    }else if(data.username != 'admin'){
+        window.location.href = '/admin';
     }
 }

@@ -24,6 +24,7 @@ async function generate_feed() {
             </footer>`
         feed.appendChild(div);
     });
+    return;
 }
 
 async function href_foruns() {
@@ -36,6 +37,5 @@ async function href_foruns() {
 async function href_post() {
     window.location.href = '/create_post'
 }
-
 href_foruns()
 generate_feed()

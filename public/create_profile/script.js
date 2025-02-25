@@ -10,7 +10,8 @@ function send_informations(){
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({ nickname, username,passwrd,bio }),
         });
-        window.location.href = '/'
+        sessionStorage.setItem('username',username);
+        window.location.href = '/home'
     }else{
         alert("as senhas não coincidem")
     }

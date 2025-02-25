@@ -39,13 +39,14 @@ const Follow = db.define('Follow',{
   forum:{type:DataTypes.INTEGER, references:{model:'Foruns', key:'id'}}
 },{freezeTableName:true,timestamps:false})
 
-Foruns.belongsTo(Profile,{foreignKey:'owner',targetKey:'username'},{logging:false})
+Foruns.belongsTo(Profile,
+  { foreignKey:'owner',targetKey:'username',onDelete:'CASCADE',onUpdate:'CASCADE'},{logging:false})
 
-Posts.belongsTo(Profile,{foreignKey:'sender', targetKey:'username'},{logging:false})
-Posts.belongsTo(Foruns,{foreignKey:'forum',targetKey:'id'},{logging:false})
+Posts.belongsTo(Profile,{foreignKey:'sender', targetKey:'username',onDelete:'CASCADE',onUpdate:'CASCADE'},{logging:false})
+Posts.belongsTo(Foruns,{foreignKey:'forum',targetKey:'id',onDelete:'CASCADE',onUpdate:'CASCADE'},{logging:false})
 
-Follow.belongsTo(Profile,{foreignKey:'sender', targetKey:'username'},{logging:false})
-Follow.belongsTo(Foruns,{foreignKey:'forum',targetKey:'id'},{logging:false})
+Follow.belongsTo(Profile,{foreignKey:'sender', targetKey:'username',onDelete:'CASCADE',onUpdate:'CASCADE'},{logging:false})
+Follow.belongsTo(Foruns,{foreignKey:'forum',targetKey:'id',onDelete:'CASCADE',onUpdate:'CASCADE'},{logging:false})
 
 db.sync({logging:false}) 
 

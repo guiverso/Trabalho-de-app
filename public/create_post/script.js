@@ -10,6 +10,7 @@ async function public_post() {
         body:JSON.stringify({username:username,select,title,content})})
     
     if(response.ok){
+        window.location.reload()
         window.location.href = '/home'
     }
 }

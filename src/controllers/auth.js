@@ -22,7 +22,7 @@ async function login(req,res){
 
     if(profile != null){
         if(profile.passwrd == passwrd){
-            res.status(200).send({message:"bem sucedido"});
+            res.status(200).send({message:"bem sucedido",username:profile.username});
         }else{
             res.status(404).json({message:"senha incorreta"});
         }
