@@ -1,0 +1,25 @@
+.feed{
+    margin: 10px;
+}
+
+.forum{
+    background-color: var(--containers-color);
+    padding: 1vw;
+}
+
+.post{
+    background-color: var(--containers-color);
+    border: var(--containers-border) solid 2px;
+    border-radius: 20px;
+    padding: 1vw;
+}
+
+#postbtn{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 50px;
+    top: 39vw;
+    left: 92vw;
+}

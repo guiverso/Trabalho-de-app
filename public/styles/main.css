@@ -20,17 +20,18 @@ body{
     color: aliceblue;
     display: flex;
     font-family: sans-serif;
+    margin-top: 4vw;
 }
 
-header{
+body > header{
     position: fixed;
     top: 0;
     background: var(--header-color);
-    width: 100vw;
+    width: 100%;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 3vw;
+    height: 4vw;
 }
 
 header > h1{
@@ -39,19 +40,29 @@ header > h1{
 }
 
 nav{
-    margin-top: 3vw;
     padding: 0.5vw;
+    width: 20vw;
+}
+
+nav > ul > li> a{
+    color:white;
+    text-decoration: none;
+}
+
+nav > ul > li> a:hover{
+    color: lightgray;
 }
 
 main{
-    margin-top: 5vw;
-    float: left;
+    width: 80vw;
+}
+
+p{
+    text-indent: 20px;
+    word-break: break-all;
 }
 
 input{
-    width: 250px;
-    height: 20px;
-    margin: 5px;
     display: flex;
     color: aliceblue;
     border-radius: 10px;
@@ -61,7 +72,7 @@ input{
 }
 
 input:focus{
-    border: aliceblue 4px solid;
+    border: aliceblue 2px solid;
 }
 
 button{
@@ -73,84 +84,4 @@ button{
 
 button:hover{
     background-color: var(--buttons-color-selected-1);
-}
-
-.container{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 2px var(--containers-border);
-
-    background-color: var(--containers-color);
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.container > a{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.container > a:hover{
-    color: rgb(192, 197, 202);
-    text-decoration: dotted;
-}
-
-.container > p{
-    font-size: 11px;
-}
-
-.post{
-    background-color: var(--containers-color);
-    border: var(--containers-border) solid 2px;
-    border-radius: 30px;
-    padding: 1vw;
-    margin: 5px;
-}
-
-#login{
-    margin: 10px;
-    width: 200px;
-    height: 30px;
-}
-
-#create-profile{
-    margin: 10px;
-    width: 200px;
-    height: 30px;
-}
-
-#search{
-    display:flex;
-    align-items: center;
-    position:fixed;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#searchinput{
-    width: 40vw;
-    height: 40px;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
-    text-indent: 20px;
-}
-
-#searchinput:focus{
-    border: aliceblue 4px solid;
-}
-
-#searchbutton{
-    background-color: purple;
-    width: 10vw;
-    height: 2vw;
-}
-
-#searchbutton:hover{
-    background-color: rgb(236, 164, 236);
 }

@@ -1,0 +1,30 @@
+.search{
+    display:flex;
+    align-items: center;
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.searchinput{
+    width: 40vw;
+    height: 3vw;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.searchinput:focus{
+    border: aliceblue 4px solid;
+}
+
+.searchbutton{
+    background-color: purple;
+    width: 10vw;
+    height: 2vw;
+}
+
+.searchbutton:hover{
+    background-color: rgb(236, 164, 236);
+}

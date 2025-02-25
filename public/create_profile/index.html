@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platinum - profile</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/forms.css">
     <script src="../create_profile/script.js" defer></script>
 </head>
 <body>
@@ -12,15 +13,16 @@
         <h1>Platinum</h1>
     </header>
 
-    <div class="container">
+    <div class="form">
         <h2>Criar Perfil</h2>
         <input type="text" id="nickname" maxlength="40" placeholder="apelido">
-        <input type="email" id="email" maxlength="40" placeholder="e-mail">
+        <input type="text" id="username" maxlength="40" placeholder="usuário">
+        <input type="text" id="bio" maxlength="280" placeholder="bio">
         <input type="password" id="password" maxlength="20" placeholder="senha">
         <input type="password" id="confirm" maxlength="20" placeholder="confirmar senha">
 
-        <button onclick="send_informations()" id="create-profile">Criar</button>
-        <p><a href="/">Já tenho conta</a></p>
+        <button onclick="send_informations()" id="create-profile-btn">Criar</button>
+        <a href="/">Já tenho conta</a>
     </div>
 </body>
 </html>

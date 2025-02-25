@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/forms.css">
     <script src="../login/script.js" defer></script>
     <title>Platinum - login</title>
 </head>
@@ -11,11 +12,11 @@
     <header>
         <h1>Platinum</h1>
     </header>
-    <div class="container">
+    <div class="form">
         <h2>Login</h2>
-        <input type="email" id="email" placeholder="e-mail">
+        <input type="text" id="username" placeholder="usuário">
         <input type="Password" id="password" placeholder="senha">
-        <button onclick="get_login()" id="login">Entrar</button>
+        <button onclick="get_login()" id="login-btn">Entrar</button>
         <p>ainda não tem uma conta? <a href="../create_profile">Criar conta</a></p>
     </div>
 </body>

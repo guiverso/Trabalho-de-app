@@ -1,0 +1,32 @@
+.form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px var(--containers-border);
+ 
+    background-color: var(--containers-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form > input{
+    width: 250px;
+    height: 20px;
+    margin: 5px;
+}
+
+#login-btn{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+#create-profile-btn{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}

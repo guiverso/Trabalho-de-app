@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="../styles/forum.css">
     <link rel="stylesheet" href="../styles/feed.css">
-    <script src="../home/script.js" defer></script>
-    <title>Platinum - Home</title>
+    <script src="./script.js" defer></script>
+    <title>Platinum - Fórum</title>
 </head>
 <body>
     <header>
         <h1>Platinum</h1>
-        <div class="search">
-            <input type="search" class="searchinput" placeholder="Pesquisar no platinum">
-            <button class="searchbutton">Pesquisar</button>
-        </div>
     </header>
-
     <nav>
         <ul>
             <li><a href="/home"><h2>Home</h2></a></li>
@@ -26,10 +21,14 @@
         </ul>
     </nav>
     <hr>
-    <main class="feed">
-       <h1>Recomendados:</h1>
-       
-    </main>
-    <button id="postbtn" onclick="href_post()">+</button>
+    <div>
+        <header>
+            <h1 id="name">nome</h1>
+            <small>por: <p id="owner"></p></small>
+            <hr>
+        </header>
+        <main class="feed">
+        </main>
+    </div>
 </body>
 </html>
