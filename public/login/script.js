@@ -12,14 +12,13 @@ async function get_login(){
 
     const data = await response.json();
 
-    console.log(data)
     console.log(response.ok)
     if(response.ok && data.username != 'admin'){
         sessionStorage.setItem('username',username);
         window.location.href = '/home';
     }else if (!response.ok){
         alert(data.message)
-    }else if(data.username != 'admin'){
+    }else if(data.username == 'admin'){
         window.location.href = '/admin';
     }
 }

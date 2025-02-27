@@ -30,3 +30,18 @@
     width: 200px;
     height: 30px;
 }
+
+#postbtn{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+select{
+    display: flex;
+    color: aliceblue;
+    border-radius: 10px;
+    background-color: var(--containers-color);
+    text-align: center;
+    outline: none;
+}

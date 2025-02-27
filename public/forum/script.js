@@ -8,10 +8,11 @@ async function generate_forum() {
         body: JSON.stringify({username})
     })
     const forum_att = await response.json();
+    console.log(forum_att)
     const title = document.querySelector('#name');
     const owner = document.querySelector('#owner')
     title.textContent = forum_att.name;
-    owner.textcontent = forum_att.owner_nickname;
+    owner.textcontent = `por: ${forum_att.owner_nickname}`;
 }
 
 async function get_forum_posts() {
